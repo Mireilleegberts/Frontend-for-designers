@@ -1,0 +1,14 @@
+* {box-sizing:border-box}
+
+body {
+    font-family: sans-serif;
+}
+
+.container img {
+    background-color: aquamarine;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+

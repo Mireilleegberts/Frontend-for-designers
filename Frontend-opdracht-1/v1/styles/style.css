@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('Roboto-Thin-webfont.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto-Regular-webfont.woff') format('woff')
+}
+
+body {
+    font-family: 'Roboto-Regular', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: orange;
+    height: 4em;
+    display: flex;
+}
+
+
+header> a {
+    background-image: url(logo.png);
+    position: absolute;
+    display: block;
+    margin-left: 1em;
+    margin-top: 2em;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: 9em;
+    width: 9em;
+    height: 2em;
+    margin-top: 1.2em;
+    
+}
+
+header button:nth-of-type(1){
+    background-color: transparent;
+    color: transparent;
+    border-style: none;
+    width: 2.7em;
+    margin-top: 1.3em;
+    background-image: url(account.svg);
+    background-repeat: no-repeat;
+    margin-left: 77%;
+}
+
+header button:nth-of-type(2){
+    background-color: transparent;
+    color: transparent;
+    border-style: none;
+    width: 2.7em;
+    margin-top: 1.3em;
+    background-image: url(zoek.svg);
+    background-repeat: no-repeat;
+    margin-left: 2%;
+}
+
+main {
+    margin-bottom: 3.5em;
+}
+
+h1{
+    font-family: 'Roboto-Regular',sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    color: orange;
+}
+
+h2{
+    font-family: 'Roboto-Thin',sans-serif;
+    font-size: 1em;
+    margin: 0;
+    color: gray;
+}
+
+article p {
+    font-family: 'Roboto-Thin',sans-serif;
+    font-size: 0.8em;
+    margin: 0;
+    color: gray;
+}
+
+article div.extra{
+    font-family: 'Roboto-Regular',sans-serif;
+    text-align: right;
+    font-size: 0.7em;
+    margin: 0;
+    padding-top: 0.5em;
+    color: orange;
+}
+
+
+
+article button:nth-of-type(1){
+    background-image: url(hartje.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    width: 2.5;
+    height: 2.5em;
+    color: transparent;
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    margin-top: -3.5em;
+    margin-left: 90%;    
+}
+
+article button:nth-of-type(2){
+    background-color: cadetblue;
+    color: white;
+    border-style: none;
+    border-radius: 0.3em;
+    margin-left: 37%;    
+}
+
+article>p:nth-of-type(4){
+    background-color: blueviolet;
+    visibility: hidden;
+    position:inherit;   
+}
+
+article p:nth-of-type(4).show{
+    background-color: blue;
+    visibility: visible;  
+}
+
+article {
+    width: 92%;
+    margin-top: 1em;
+    margin-left: 4%;
+    margin-right: 4%;
+    position: relative;
+}
+
+
+article img {
+    width: 100%;
+    border-radius: 0.3em;
+   
+}
+
+footer {
+    background-color: #f5f5f5;
+    bottom: 0;
+    position: fixed;
+    height: 3em;
+    width: 100%;
+    display: flex;
+}
+
+footer button:nth-of-type(1){
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+    background-image: url(locatie.svg);
+    background-repeat: no-repeat;
+    background-size: 3em;
+    width: 3em;
+    height: 3em;
+    color: transparent;
+    background-color: transparent;
+    border-style: none;
+}
+
+footer button:nth-of-type(2){
+    margin-left: 10.4em;
+    margin-top: 0.5em;
+    background-image: url(hartje2.svg);
+    background-repeat: no-repeat;
+    background-size: 3em;
+    width: 3em;
+    height: 3em;
+    color: transparent;
+    background-color: transparent;
+    border-style: none;
+}
+
+footer button:nth-of-type(3){
+    margin-left: 9em;
+    margin-top: 0.5em;
+    background-image: url(instellingen.svg);
+    background-repeat: no-repeat;
+    background-size: 3em;
+    width: 3em;
+    height: 3em;
+    color: transparent;
+    background-color: transparent;
+    border-style: none;
+
+}
