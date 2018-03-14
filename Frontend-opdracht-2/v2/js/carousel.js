@@ -17,6 +17,7 @@ next.addEventListener("click",function(){
   }
 );
 
+
 //straks aanzetten
 //back.addEventListener("click",function(){
 //    slider.classList.add('vorige'); 
