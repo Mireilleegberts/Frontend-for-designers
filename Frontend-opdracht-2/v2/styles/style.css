@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+}
+
+main img {
+    width: 400px;
+    height: 250px;
+}
+
+.back{
+    background-color: skyblue;
+    margin-left: -1600px;
+}
+
+.next{
+    background-color: skyblue;
+    margin-left: 350px;
+}
+
+.slide {
+    background-color: aqua;
+}
+
+/*
+.volgende {
+    margin-left: 400px;
+}
+*/
+
+.vorige {
+    margin-left: -400px;
+}
