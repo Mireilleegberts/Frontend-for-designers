@@ -2,7 +2,8 @@ main {
     display: flex;
     flex-direction: row;
     width: 1600px;
-    transform: translate3d(0, 0, 0);
+    transition: all 1s;
+    
 }
 
 main img {
@@ -10,21 +11,35 @@ main img {
     height: 250px;
 }
 
-.back{
+
+button.back{
     background-color: skyblue;
-    margin-left: -1600px;
+    color: white;
+
 }
 
-.next{
+button.next{
     background-color: skyblue;
-    margin-left: 350px;
+    margin-left: 320px;
+    color: white;
+    border-style: none;
+    margin-top: 100px;
 }
 
 .slide {
     background-color: aqua;
 }
 
+.volgende1{
+    margin-left: 0;
+}
 
-.volgende {
+.volgende2 {
     margin-left: -400px;
+}
+.volgende3 {
+    margin-left: -800px;
+}
+.volgende4 {
+    margin-left: -1200px;
 }

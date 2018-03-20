@@ -6,24 +6,66 @@
 
 /*eslint 'no-console': 0*/
 var slider = document.querySelector('main');
-//var back = document.querySelector('main .back');
-var next = document.querySelector('main .next');
+var back = document.querySelector('.back');
+var next = document.querySelector('.next');
+//var i = 0;
+var currentslide = 1;
 
 
+//carousel
+function beweegcarousel(){
+    console.log("currentslide: " + currentslide);
+    
+    if(currentslide == 1){
+        slider.classList.add('volgende1');
+        slider.classList.remove('volgende2');
+        slider.classList.remove('volgende3');
+        slider.classList.remove('volgende4');
+    }
+    if(currentslide == 2){
+        slider.classList.remove('volgende1');
+        slider.classList.add('volgende2');
+        slider.classList.remove('volgende3');
+        slider.classList.remove('volgende4');
+
+    }
+
+    if(currentslide == 3){
+        slider.classList.remove('volgende1');
+        slider.classList.remove('volgende2');
+        slider.classList.add('volgende3');
+        slider.classList.remove('volgende4');
+
+    }  
+    
+    if(currentslide == 4){
+        slider.classList.remove('volgende1');
+        slider.classList.remove('volgende2');
+        slider.classList.remove('volgende3');
+        slider.classList.add('volgende4');
+
+    } 
+}
 //actie !
-next.addEventListener("click",function(){
-    slider.classList.add('volgende');
+next.addEventListener("click", function(){
     console.log('volgende slide');
+    currentslide++;
+    if(currentslide>4){
+        currentslide =1;
+    }
+    beweegcarousel();
   }
 );
 
+back.addEventListener("click",function(){
+    console.log('Naar slide');
+    currentslide--;
+    if(currentslide<1){
+        currentslide =1;
+    }
+    beweegcarousel();
+}
 
-//straks aanzetten
-//back.addEventListener("click",function(){
-//    slider.classList.add('vorige'); 
-//  }
-//);
-
-
+);
 
 
