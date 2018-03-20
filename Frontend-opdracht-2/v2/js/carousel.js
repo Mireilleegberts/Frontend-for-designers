@@ -43,21 +43,24 @@ function beweegcarousel(){
         slider.classList.remove('volgende2');
         slider.classList.remove('volgende3');
         slider.classList.add('volgende4');
+        
+    
 
     } 
 }
 //actie !
 next.addEventListener("click", function(){
-    console.log('volgende slide');
+    console.log('volgende slide + keyCode');
     currentslide++;
     if(currentslide>4){
         currentslide =1;
     }
     beweegcarousel();
+    
   }
 );
 
-back.addEventListener("click",function(){
+back.addEventListener("click", function(){
     console.log('Naar slide');
     currentslide--;
     if(currentslide<1){
@@ -68,4 +71,11 @@ back.addEventListener("click",function(){
 
 );
 
-
+$("body").keydown(function(e) {
+  if(e.keyCode == 37) { // left
+    $( ".back" ).trigger( "click" );
+  }
+  else if(e.keyCode == 39) { // right
+    $( ".next" ).trigger( "click" );
+  }
+});
